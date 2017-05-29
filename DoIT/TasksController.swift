@@ -31,31 +31,26 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "addSegue" {
-////            let nextVC = segue.destination as! CreateTaskViewController
-////            nextVC.previousVC = self
-//        }
+
         
         if segue.identifier == "selectTaskSegue" {
             let nextVC = segue.destination as! CompleteTaskViewController
-            nextVC.task = sender as! Task
-            nextVC.previousVC = self
-
-            
+            nextVC.task = sender as? Task
+          
         }
         
     }
     var tasks : [Task] = []
-    var selectedIndex = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tasks = makeTasks()
         tableView.dataSource = self
         tableView.delegate = self
     }
     override func viewWillAppear(_ animated: Bool) {
         getTasks()
+        tableView.reloadData()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
@@ -67,10 +62,10 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
         if task.important {
-            cell.textLabel?.text = "❗️\(task.name)"
+            cell.textLabel?.text = "❗️\(task.name!)"
         }
         else {
-        cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name!
         }
         
         
@@ -79,7 +74,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndex = indexPath.row
+      
         let task = tasks[indexPath.row]
         performSegue(withIdentifier: "selectTaskSegue", sender: task)
         
