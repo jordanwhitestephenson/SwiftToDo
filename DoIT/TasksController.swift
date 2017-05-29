@@ -53,6 +53,12 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = tasks[indexPath.row]
+        performSegue(withIdentifier: "selectTaskSegue", sender: task)
+        
+    }
     func makeTasks() -> [Task] {
         let task1 = Task()
         task1.name = "Walk the dog"

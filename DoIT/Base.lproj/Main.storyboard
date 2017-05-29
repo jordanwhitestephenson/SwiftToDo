@@ -45,6 +45,7 @@
                     <connections>
                         <outlet property="tableView" destination="1lf-4Y-iPF" id="ZRd-Wn-4XY"/>
                         <segue destination="XqE-Hv-0j8" kind="show" identifier="addSegue" id="EUq-VL-4Do"/>
+                        <segue destination="eNJ-mz-usc" kind="show" identifier="selectTaskSegue" id="d1M-n0-dfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,7 +107,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKr-4c-pPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="-645"/>
+            <point key="canvasLocation" x="2254" y="-713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o8m-V7-Fnl">
+            <objects>
+                <viewController id="eNJ-mz-usc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvc-AI-a0l"/>
+                        <viewControllerLayoutGuide type="bottom" id="iV0-QO-6cy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8PM-dH-oar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lk8-sz-R3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K3d-ab-ioQ">
