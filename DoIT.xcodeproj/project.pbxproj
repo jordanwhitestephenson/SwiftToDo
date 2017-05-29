@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EF11F6821EDC6656001C9C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6811EDC6656001C9C41 /* AppDelegate.swift */; };
-		EF11F6841EDC6656001C9C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6831EDC6656001C9C41 /* ViewController.swift */; };
+		EF11F6841EDC6656001C9C41 /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6831EDC6656001C9C41 /* TasksController.swift */; };
 		EF11F6871EDC6656001C9C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF11F6851EDC6656001C9C41 /* Main.storyboard */; };
 		EF11F68A1EDC6656001C9C41 /* DoIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6881EDC6656001C9C41 /* DoIT.xcdatamodeld */; };
 		EF11F68C1EDC6656001C9C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF11F68B1EDC6656001C9C41 /* Assets.xcassets */; };
 		EF11F68F1EDC6656001C9C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF11F68D1EDC6656001C9C41 /* LaunchScreen.storyboard */; };
+		EF11F6971EDC6A7A001C9C41 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6961EDC6A7A001C9C41 /* Task.swift */; };
+		EF11F6991EDC7557001C9C41 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11F6981EDC7557001C9C41 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF11F67E1EDC6656001C9C41 /* DoIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF11F6811EDC6656001C9C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF11F6831EDC6656001C9C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF11F6831EDC6656001C9C41 /* TasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
 		EF11F6861EDC6656001C9C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF11F6891EDC6656001C9C41 /* DoIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoIT.xcdatamodel; sourceTree = "<group>"; };
 		EF11F68B1EDC6656001C9C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF11F68E1EDC6656001C9C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF11F6901EDC6656001C9C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF11F6961EDC6A7A001C9C41 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EF11F6981EDC7557001C9C41 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				EF11F6811EDC6656001C9C41 /* AppDelegate.swift */,
-				EF11F6831EDC6656001C9C41 /* ViewController.swift */,
+				EF11F6831EDC6656001C9C41 /* TasksController.swift */,
+				EF11F6981EDC7557001C9C41 /* CreateTaskViewController.swift */,
+				EF11F6961EDC6A7A001C9C41 /* Task.swift */,
 				EF11F6851EDC6656001C9C41 /* Main.storyboard */,
 				EF11F68B1EDC6656001C9C41 /* Assets.xcassets */,
 				EF11F68D1EDC6656001C9C41 /* LaunchScreen.storyboard */,
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF11F6841EDC6656001C9C41 /* ViewController.swift in Sources */,
+				EF11F6971EDC6A7A001C9C41 /* Task.swift in Sources */,
+				EF11F6841EDC6656001C9C41 /* TasksController.swift in Sources */,
 				EF11F68A1EDC6656001C9C41 /* DoIT.xcdatamodeld in Sources */,
 				EF11F6821EDC6656001C9C41 /* AppDelegate.swift in Sources */,
+				EF11F6991EDC7557001C9C41 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
